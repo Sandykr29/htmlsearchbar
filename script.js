@@ -1,4 +1,4 @@
-// script.js
+
 
 const searchInput = document.getElementById('search-input');
 const clearButton = document.getElementById('clear-button');
@@ -10,10 +10,11 @@ let countries = [];
 fetch('data.json')
   .then(response => response.json())
   .then(data => {
+    console.log(data)
     countries = data;
   });
 
-// Function to clear
+// Function to clear search input and hide dropdown
 function clearSearch() {
     searchInput.value = '';
     suggestionsList.innerHTML = '';

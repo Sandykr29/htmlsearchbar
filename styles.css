@@ -1,0 +1,51 @@
+
+  .search-container {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+  }
+  
+  #search-input {
+    width: calc(100% - 90px); 
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  #clear-button {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto 5px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .dropdown-container {
+    position: relative;
+  }
+  
+  #suggestions-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-top: none;
+    width: calc(100% - 2px);
+    position: absolute;
+    top: calc(100% + 2px);
+    left: 0;
+  }
+  
+  #suggestions-list li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  #suggestions-list li:hover {
+    background-color: #f0f0f0;
+  }
+  
